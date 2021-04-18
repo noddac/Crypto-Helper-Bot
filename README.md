@@ -1,5 +1,8 @@
 # Commands
 
+# Invite
+To invite a Discord bot to a server, you must have administration rights. 
+If you have it you can invite the bot [here]()
 
 # Screenshots
 
