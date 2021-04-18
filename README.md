@@ -1,7 +1,7 @@
 # Overview
 Cryto Helper is a crypto tool Discord bot based on [discord.py](https://discordpy.readthedocs.io/en/stable/)!
+**Commands**
 
-# Commands
 
 # Invite
 To invite a Discord bot to a server, you must have administration rights. 
