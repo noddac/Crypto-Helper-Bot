@@ -5,11 +5,11 @@ Cryto Helper is a crypto tool Discord bot based on [discord.py](https://discordp
 **Prefix:**`?`
 
 **Commands**
-- `?help`
-- `?info`
-- `?invite`
-- `?join`
-- `?ping`
+- `?help` Shows a help menu
+- `?info` Shows some information about the bot
+- `?invite` Shows the [invite link](https://discord.com/oauth2/authorize?client_id=827437359036760064&permissions=8&scope=bot) of the bot
+- `?join` Shows the [invite link](https://discord.gg/Q9stTbAHNF) for the supporter server
+- `?ping` Shows the bot latency
 - `?btc` or `?bitcoin`
 - `?ltc` or `?litcoin`
 - `?ether` or `?ethereum`
