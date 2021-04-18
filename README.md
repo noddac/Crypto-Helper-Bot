@@ -4,8 +4,12 @@
 To invite a Discord bot to a server, you must have administration rights. 
 If you have it you can invite the bot [here](https://discord.com/oauth2/authorize?client_id=827437359036760064&permissions=8&scope=bot)
 
+
 # Screenshots
 
+
+# Join the community
+Join us on my [Official Discord Server](https://discord.gg/Q9stTbAHNF)!
 
 # License
 MIT License
@@ -32,6 +36,6 @@ SOFTWARE.
 
 More information you can find [here](https://choosealicense.com/licenses/mit)!
 
-# About me 
+
 
 
