@@ -9,6 +9,7 @@ If you have it you can invite the bot [here](https://discord.com/oauth2/authoriz
 
 
 # Join the community
+ 
 Join us on my [Official Discord Server](https://discord.gg/Q9stTbAHNF)!
 
 # License
