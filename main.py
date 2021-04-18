@@ -1,8 +1,7 @@
 import asyncio
-import random
-import string
 import discord
 import requests
+import secrets
 from bs4 import BeautifulSoup
 from discord.ext import commands
 
@@ -40,6 +39,26 @@ async def status_task():
         await asyncio.sleep(10)
 
 
+@client.command()
+async def help(ctx):
+    embed = discord.Embed(title="Help Menu", description="Need some help?")
+    embed.add_field(name="?help", value="Shows this menu", inline=False)
+    embed.add_field(name="?info", value="Shows some information about the bot", inline=False)
+    embed.add_field(name="?invite", value="Invite the bot to your server", inline=False)
+    embed.add_field(name="?join", value="Join the support server", inline=False)
+    embed.add_field(name="?ping", value="Display the bot latency", inline=False)
+    embed.add_field(name="?btc or ?bitcoin", value="Shows some information and the course of Bitcoin", inline=False)
+    embed.add_field(name="?ltc or ?litcoin", value="Shows some information and the course of Litcoin", inline=False)
+    embed.add_field(name="?ether or ?ethereum", value="Shows some information and the course of Ethereum", inline=False)
+    embed.set_footer(text="Powered by Noddac#4399")
+    await ctx.send(embed=embed)
+
+
+@client.command()
+async def ping(ctx):
+    await ctx.send('Pong! {0} seconds'.format(round(client.latency, 1)))
+
+
 response = requests.get("https://www.bitcoin.de")
 soup = BeautifulSoup(response.content, 'html.parser')
 btc_price = soup.find(id="ticker_price").text
@@ -64,93 +83,95 @@ xrp_price = soup.find(id="ticker_price").text
 
 
 @client.command()
-async def help(ctx):
-    embed = discord.Embed(title="Help Menu", description="Need some help?")
-    embed.add_field(name="?help", value="Shows this menu", inline=False)
-    embed.add_field(name="?info", value="Shows some information about the bot", inline=False)
-    embed.add_field(name="?invite", value="Invite the bot to your server", inline=False)
-    embed.add_field(name="?join", value="Join the support server", inline=False)
-    embed.add_field(name="?ping", value="Display the bot latency", inline=False)
-    embed.add_field(name="?btc or ?bitcoin", value="Shows some information and the course of Bitcoin", inline=False)
-    embed.add_field(name="?ltc or ?litcoin", value="Shows some information and the course of Litcoin", inline=False)
-    embed.add_field(name="?ether or ?ethereum", value="Shows some information and the course of Ethereum", inline=False)
-    await ctx.send(embed=embed)
-
-
-@client.command()
 async def invite(ctx):
     await ctx.send("https://discord.com/api/oauth2/authorize?client_id=827437359036760064&permissions=8&scope=bot")
 
 
 @client.command()
-async def ping(ctx):
-    await ctx.send('Pong! {0} seconds'.format(round(client.latency, 1)))
+async def join(ctx):
+    await  ctx.send("https://discord.com/invite/Q9stTbAHNF")
 
 
 @client.command()
 async def btc(ctx):
     embed = discord.Embed(title="Bitcoins")
-    embed.add_field(name="Information", value="d", inline=False)
+    embed.add_field(name="Name", value="Bitcoin", inline=False)
+    embed.add_field(name="Founder", value="Satoshi Nakamoto", inline=False)
+    embed.add_field(name="Publication", value="2009", inline=False)
+    embed.add_field(name="Limit", value="20.999.999,97690000", inline=False)
+    embed.add_field(name="Mining", value="SHA-256", inline=False)
+    embed.add_field(name="Blockchain", value="340 GB", inline=False)
     embed.add_field(name="Price per Bitcoin", value=btc_price, inline=False)
-    embed.add_field(name="Price per 0,5 Bitcoin", value=btc_price/2, inline=False)
-    embed.add_field(name="Price per 0,1 Bitcoin", value=btc_price/10, inline=False)
-    embed.add_field(name="Price per 0,01 Bitcoin", value=btc_price / 100, inline=False)
+    embed.set_footer(text="Powered by Noddac#4399")
     await ctx.send(embed=embed)
 
 
 @client.command()
 async def bitcoin(ctx):
     embed = discord.Embed(title="Bitcoins")
-    embed.add_field(name="Information", value="d", inline=False)
+    embed.add_field(name="Name", value="Bitcoin", inline=False)
+    embed.add_field(name="Founder", value="Satoshi Nakamoto", inline=False)
+    embed.add_field(name="Publication", value="2009", inline=False)
+    embed.add_field(name="Limit", value="20.999.999,97690000", inline=False)
+    embed.add_field(name="Mining", value="SHA-256", inline=False)
+    embed.add_field(name="Blockchain", value="340 GB", inline=False)
     embed.add_field(name="Price per Bitcoin", value=btc_price, inline=False)
-    embed.add_field(name="Price per 0,5 Bitcoin", value=btc_price/2, inline=False)
-    embed.add_field(name="Price per 0,1 Bitcoin", value=btc_price/10, inline=False)
-    embed.add_field(name="Price per 0,01 Bitcoin", value=btc_price / 100, inline=False)
+    embed.set_footer(text="Powered by Noddac#4399")
     await ctx.send(embed=embed)
 
 
 @client.command()
 async def ltc(ctx):
     embed = discord.Embed(title="Litcoin")
-    embed.add_field(name="Information", value="d", inline=False)
+    embed.add_field(name="Name", value="Litcoin", inline=False)
+    embed.add_field(name="Founder", value="Charlie Lee", inline=False)
+    embed.add_field(name="Publication", value="2011", inline=False)
+    embed.add_field(name="Mining", value="Scrypt", inline=False)
+    embed.add_field(name="Blockchain", value="33 GB", inline=False)
     embed.add_field(name="Price per Litcoin", value=ltc_price, inline=False)
-    embed.add_field(name="Price per 0,5 Litcoin", value=ltc_price/2, inline=False)
-    embed.add_field(name="Price per 0,1 Litcoin", value=ltc_price/10, inline=False)
-    embed.add_field(name="Price per 0,01 Litcoin", value=ltc_price/100, inline=False)
+    embed.set_footer(text="Powered by Noddac#4399")
     await ctx.send(embed=embed)
 
 
 @client.command()
 async def litcoin(ctx):
     embed = discord.Embed(title="Litcoin")
-    embed.add_field(name="Information", value="d", inline=False)
+    embed.add_field(name="Name", value="Litcoin", inline=False)
+    embed.add_field(name="Founder", value="Charlie Lee", inline=False)
+    embed.add_field(name="Publication", value="2011", inline=False)
+    embed.add_field(name="Mining", value="Scrypt", inline=False)
+    embed.add_field(name="Blockchain", value="33 GB", inline=False)
     embed.add_field(name="Price per Litcoin", value=ltc_price, inline=False)
-    embed.add_field(name="Price per 0,5 Litcoin", value=ltc_price/2, inline=False)
-    embed.add_field(name="Price per 0,1 Litcoin", value=ltc_price/10, inline=False)
-    embed.add_field(name="Price per 0,01 Litcoin", value=ltc_price/100, inline=False)
+    embed.set_footer(text="Powered by Noddac#4399")
     await ctx.send(embed=embed)
 
 
 @client.command()
 async def ether(ctx):
     embed = discord.Embed(title="Ethereum")
-    embed.add_field(name="Information", value="d", inline=False)
+    embed.add_field(name="Name", value="Ethereum", inline=False)
+    embed.add_field(name="Founder", value="Vitalik Buterin, Gavin Wood & Jeffrey Wilcke", inline=False)
+    embed.add_field(name="Publication", value="30. Juli 2015", inline=False)
+    embed.add_field(name="Codebase", value="Solidity", inline=False)
+    embed.add_field(name="Mining", value="Ethash", inline=False)
+    embed.add_field(name="Blockchain", value="337 GB", inline=False)
     embed.add_field(name="Price per Ethereum", value=ether_price, inline=False)
-    embed.add_field(name="Price per 0,5 Ethereum", value=ether_price/2, inline=False)
-    embed.add_field(name="Price per 0,1 Ethereum", value=ether_price/10, inline=False)
-    embed.add_field(name="Price per 0,01 Ethereum", value=ether_price/100, inline=False)
+    embed.set_footer(text="Powered by Noddac#4399")
     await ctx.send(embed=embed)
 
 
 @client.command()
 async def ethereum(ctx):
     embed = discord.Embed(title="Ethereum")
-    embed.add_field(name="Information", value="d", inline=False)
+    embed.add_field(name="Name", value="Ethereum", inline=False)
+    embed.add_field(name="Founder", value="Vitalik Buterin, Gavin Wood & Jeffrey Wilcke", inline=False)
+    embed.add_field(name="Publication", value="30. Juli 2015", inline=False)
+    embed.add_field(name="Codebase", value="Solidity", inline=False)
+    embed.add_field(name="Mining", value="Ethash", inline=False)
+    embed.add_field(name="Blockchain", value="337 GB", inline=False)
     embed.add_field(name="Price per Ethereum", value=ether_price, inline=False)
-    embed.add_field(name="Price per 0,5 Ethereum", value=ether_price/2, inline=False)
-    embed.add_field(name="Price per 0,1 Ethereum", value=ether_price/10, inline=False)
-    embed.add_field(name="Price per 0,01 Ethereum", value=ether_price/100, inline=False)
+    embed.set_footer(text="Powered by Noddac#4399")
     await ctx.send(embed=embed)
 
 
-client.run("ODI3NDM3MzU5MDM2NzYwMDY0.YGbBFw.9i7PjeRwYUSNIZdI4gPuTH9BfEE")
+client.run(secrets.TOKEN)
