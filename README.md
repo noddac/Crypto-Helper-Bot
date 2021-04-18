@@ -1,6 +1,19 @@
 # Overview
 Cryto Helper is a crypto tool Discord bot based on [discord.py](https://discordpy.readthedocs.io/en/stable/)!
+
+
+**Prefix:**`?`
+
 **Commands**
+- `?help`
+- `?info`
+- `?invite`
+- `?join`
+- `?ping`
+- `?btc` or `?bitcoin`
+- `?ltc` or `?litcoin`
+- `?ether` or `?ethereum`
+
 
 
 # Invite
