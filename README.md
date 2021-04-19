@@ -25,7 +25,7 @@ You can invite the bot [here](https://discord.com/oauth2/authorize?client_id=827
 - `"BTC-Price: " + btc_price` Shows the Bitcoin price
 - `"Ether-Price: " + ether_price` Shows the Ethereum price
 - `"LTC-Price: " + ltc_price` Shows the Litcoin price
-The status changes every 10 seconds completely automatically.
+- The status changes every 10 seconds completely automatically.
 
 
 # Supported currencies
