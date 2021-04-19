@@ -1,5 +1,5 @@
 # Overview
-Cryto Helper is a crypto tool Discord bot based on [discord.py](https://discordpy.readthedocs.io/en/stable/)!
+Cryto Helper is a crypto Discord bot based on [Discord.py](https://discordpy.readthedocs.io/en/stable/)! Discord.py is a Discord Python API.
 
 
 **Prefix:** `?`
