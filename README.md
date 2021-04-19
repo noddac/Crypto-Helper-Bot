@@ -20,7 +20,34 @@ You can invite the bot [here](https://discord.com/oauth2/authorize?client_id=827
 - `?ether` or `?ethereum` Shows some information and the course of Ethereum
 
 
-**Status**
+**Status:**
+- `?help` 
+- `"BTC-Price: " + btc_price` Shows the Bitcoin price
+- `"Ether-Price: " + ether_price` Shows the Ethereum price
+- `"LTC-Price: " + ltc_price` Shows the Litcoin price
+The status changes every 10 seconds completely automatically.
+
+
+# Supported currencies
+*Crypto*
+- [x] Bitcoin
+- [x] Bitcoin Cash
+- [x] Bitcoin Gold
+- [x] Bitcoin SV
+- [x] Litcoin
+- [x] Ethereum
+- [x] Ripple
+- [ ] Dogchoin
+
+*Real currency*
+- [x] Euro
+- [ ] Dollar
+- [ ] Pound
+- [ ] Yen
+
+**Legend**
+- [x] Is supported
+- [ ] Is currently not supported, but will be added soon... 
 
 # Join the community
  Join us on my [Official Discord Server](https://discord.gg/Q9stTbAHNF)!
