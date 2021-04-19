@@ -20,6 +20,7 @@ You can invite the bot [here](https://discord.com/oauth2/authorize?client_id=827
 - `?ether` or `?ethereum` Shows some information and the course of Ethereum
 
 
+**Status**
 
 # Join the community
  Join us on my [Official Discord Server](https://discord.gg/Q9stTbAHNF)!
