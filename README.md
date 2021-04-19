@@ -2,7 +2,11 @@
 Cryto Helper is a crypto tool Discord bot based on [discord.py](https://discordpy.readthedocs.io/en/stable/)!
 
 
-**Prefix:**`?`
+**Prefix:** `?`
+
+**Invite**
+To invite a Discord bot to a server, you must have administration rights. 
+If you have it you can invite the bot [here](https://discord.com/oauth2/authorize?client_id=827437359036760064&permissions=8&scope=bot)
 
 **Commands**
 - `?help` Shows a help menu
@@ -15,10 +19,6 @@ Cryto Helper is a crypto tool Discord bot based on [discord.py](https://discordp
 - `?ether` or `?ethereum`
 
 
-
-# Invite
-To invite a Discord bot to a server, you must have administration rights. 
-If you have it you can invite the bot [here](https://discord.com/oauth2/authorize?client_id=827437359036760064&permissions=8&scope=bot)
 
 # Join the community
  Join us on my [Official Discord Server](https://discord.gg/Q9stTbAHNF)!
