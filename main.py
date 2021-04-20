@@ -43,7 +43,6 @@ async def status_task():
 async def help(ctx):
     embed = discord.Embed(title="Help Menu", description="Need some help?")
     embed.add_field(name="?help", value="Shows this menu", inline=False)
-    embed.add_field(name="?info", value="Shows some information about the bot", inline=False)
     embed.add_field(name="?invite", value="Invite the bot to your server", inline=False)
     embed.add_field(name="?join", value="Join the support server", inline=False)
     embed.add_field(name="?github", value="Shows the link to the github repository of ths open source bot", inline=False)
