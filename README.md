@@ -51,7 +51,6 @@ You can invite the bot [here](https://discord.com/oauth2/authorize?client_id=827
 # Join the community
  Join us on my [Official Discord Server](https://discord.gg/Q9stTbAHNF)!
 
-# Screenshots
 
 # License
 MIT License
