@@ -5,14 +5,11 @@ Cryto Helper is a crypto Discord bot based on [Discord.py](https://discordpy.rea
 **Prefix:** `?`
 
 
-**Invite:**
-You can invite the bot [here](https://discord.com/oauth2/authorize?client_id=827437359036760064&permissions=8&scope=bot) to your server. This bot is hosted by myself and is 24/7 online.
-
 
 **Commands:**
 - `?help` Shows a help menu
-- `?invite` Shows the [invite link](https://discord.com/oauth2/authorize?client_id=827437359036760064&permissions=8&scope=bot) of the bot
-- `?join` Shows the [invite link](https://discord.gg/Q9stTbAHNF) for the supporter server
+- `?invite` Shows the invite link of the bot
+- `?join` Shows the invite link for the supporter server
 - `?ping` Shows the bot latency
 - `?btc` or `?bitcoin` Shows some information and the course of Bitcoin
 - `?ltc` or `?litcoin` Shows some information and the course of Litcoin
@@ -48,9 +45,10 @@ You can invite the bot [here](https://discord.com/oauth2/authorize?client_id=827
 - [x] Is supported
 - [ ] Is currently not supported, but will be added soon... 
 
-# Join the community
- Join us on my [Official Discord Server](https://discord.gg/Q9stTbAHNF)!
 
+# Setup
+1. Add your token in the secret.py file
+2. Add your Discord server and the invite for your Bot
 
 # License
 MIT License
