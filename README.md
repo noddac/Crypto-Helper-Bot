@@ -37,7 +37,7 @@ Cryto Helper is a crypto Discord bot based on [Discord.py](https://discordpy.rea
 
 *Real currency*
 - [x] Euro
-- [ ] Dollar
+- [ ] US-Dollar
 - [ ] Pound
 - [ ] Yen
 
